@@ -31,20 +31,20 @@ fn main() {
 
     // Get the output path
     let out_dir = env::var("OUT_DIR").unwrap();
-    let beta_offset = out_dir.find("debug").unwrap_or(0);
-    let beta_offset_release = out_dir.find("release").unwrap_or(0);
+    let debug_offset = out_dir.find("debug").unwrap_or(0);
+    let release_offset = out_dir.find("release").unwrap_or(0);
     let mut path = String::from("");
 
-    if beta_offset > 0 {
-        println!(">>> where is debug {}", beta_offset);
-        path.push_str(&format!("{}", &out_dir[..beta_offset]));
+    if debug_offset > 0 {
+        println!(">>> where is debug {}", debug_offset);
+        path.push_str(&format!("{}", &out_dir[..debug_offset]));
         path.push_str("debug");
         println!("{}", path);
     }
 
-    if beta_offset_release > 0 {
-        println!(">>> where is release {}", beta_offset_release);
-        path.push_str(&format!("{}", &out_dir[..beta_offset_release]));
+    if release_offset > 0 {
+        println!(">>> where is release {}", release_offset);
+        path.push_str(&format!("{}", &out_dir[..release_offset]));
         path.push_str("release");
         println!("{}", path);
     }
