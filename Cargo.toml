@@ -1,0 +1,20 @@
+[package]
+name = "barcodereader"
+version = "0.1.0"
+authors = ["Xiao Ling <xiao@dynamsoft.com>"]
+build = "build.rs"
+
+description = "Dynamsoft's Barcode Reader SDK enables you to efficiently embed barcode reading functionality in your web, desktop or mobile application using just a few lines of code."
+documentation = "https://www.dynamsoft.com/Products/Barcode-Reader-Resources.aspx#documentation"
+homepage = "https://www.dynamsoft.com/Products/Dynamic-Barcode-Reader.aspx"
+keywords = ["barcode", "QR code", "PDF417", "Aztec Code", "DataMatrix"]
+
+[profile.dev]
+rpath = true
+
+[profile.release]
+rpath = true
+
+[build-dependencies]
+cc = "1.0"
+bindgen = "0.42.1"
