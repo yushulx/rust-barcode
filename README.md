@@ -33,3 +33,6 @@ The sample demonstrates how to implement a simple command line barcode reader us
     ```
 
     ![rust barcode](https://www.codepool.biz/wp-content/uploads/2018/10/rust-barcode.PNG)
+
+## Blog
+[Rust Programming with Dynamsoft Barcode Reader](https://www.codepool.biz/rust-programming-dynamsoft-barcode-reader.html)
