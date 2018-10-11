@@ -18,7 +18,7 @@ The sample demonstrates how to implement a simple command line barcode reader us
 
 3. Copy `Dynamsoft\Barcode Reader 6.3\Components\C_C++\Redist\x64\DynamsoftBarcodeReaderx64.dll` to `platforms\win\DynamsoftBarcodeReaderx64.dll`. 
 
-    Copy `Dynamsoft\Barcode Reader 6.4\Components\C_C++\Lib\DBRx64.lib` to `platforms\win\DBRx64.lib`
+    Copy `Dynamsoft\Barcode Reader 6.3\Components\C_C++\Lib\DBRx64.lib` to `platforms\win\DBRx64.lib`
 
 4. Build the app:
 
